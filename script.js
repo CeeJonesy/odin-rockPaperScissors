@@ -70,6 +70,17 @@ function handleClick(playerSelection) {
     const computerSelection = getComputerChoice()
     playRound(playerSelection, computerSelection)
     updateScore()
+    if (pScore === 5){
+      pScores.style.visibility = "hidden";
+      cScores.style.visibility = "hidden";
+      winLose.textContent = `WINNER`
+  }
+
+  if (cScore === 5){
+      pScores.style.visibility = "hidden";
+      cScores.style.visibility = "hidden";
+      winLose.textContent = `LOSER`
+  }
     }
 }
 
