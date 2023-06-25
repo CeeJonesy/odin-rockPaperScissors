@@ -11,8 +11,6 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-
-    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -20,13 +18,16 @@
     </header>
     <main class="game">
         <div class="scores">
-            <div class="scoreBox">
+            <div class="scoreBox" id="pscores">
                 <h3 class="teamText">PLAYER</h3>
                 <div class="pointsBox" id="playerPoints">0</div>
             </div>
-            <div class="scoreBox">
+            <div class="scoreBox" id="cscores">
                 <h3 class="teamText">COMPUTER</h3>
                 <div class="pointsBox" id="computerPoints">0</div>
+            </div>
+            <div class="winLose">
+                <h2 class="wlH2" id="wl"></h2>
             </div>
         </div>
         <div class="buttons">
@@ -40,6 +41,10 @@
                 ✌
             </button>
         </div>
+        <div class="result">
+            <h3 class="h3Result" id="result"></h3>
+        </div>
     </main>
 </body>
 </html>
+<script src="script.js"></script>
