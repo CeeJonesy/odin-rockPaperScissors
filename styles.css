@@ -30,6 +30,8 @@ body {
 
 .scoreBox{
     margin: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
     text-align: center;
     font-size: 15px;
 }
